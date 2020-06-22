@@ -1,0 +1,28 @@
+.about-me {
+  padding: 160px 0;
+
+  &__title {
+    margin-bottom: 70px;
+    text-align: center;
+  }
+
+  &__image {
+    width: calc(100% - 25px);
+    margin-left: 25px;
+  }
+
+  &__subtitle {
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    margin-bottom: 30px;
+  }
+
+  .sing-up {
+    padding-left: 0;
+    text-decoration: none;
+    background: transparent;
+    color: $primary-color;
+  }
+}

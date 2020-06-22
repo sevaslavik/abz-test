@@ -1,0 +1,92 @@
+.header {
+  position: fixed;
+  width: 100%;
+  margin-left: -15px;
+  padding: 16px 30px;
+  background-color: $background-color;
+  z-index: 10;
+
+  .nav {
+    position: fixed;
+    right: -500px;
+    //transform: translateX(0);
+    display: flex;
+    justify-content: flex-end;
+
+    &-list {
+      display: flex;
+      list-style: none;
+
+      &__item:not(:last-child) {
+        margin-right: 30px;
+      }
+
+      &__link {
+        text-decoration: none;
+        color: #212529;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .hamburger-btn {
+    position: fixed;
+    top: -5px;
+    right: 0;
+    display: none;
+    font-size: 40px;
+    text-align: right;
+    color: $secondary-color;
+    background: transparent;
+    border: none;
+  }
+
+  .open-menu {
+    transform: translateX(-100%);
+  }
+
+  .close-menu {
+    transform: translateX(0);
+  }
+
+  @media (max-width:801px) {
+    .header {
+      padding: 10px 0;
+    }
+
+    .nav {
+      position: fixed;
+      top: 55px;
+      left: 0px;
+      width: 85%;
+      background-color: $background-color;
+      border-top: 1px solid #ececec;
+      //transform: translateX(-100%); it's when nav close
+      //transform: translateX(0); it's when nav open
+
+      &-list {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0;
+
+        &__item {
+          text-align: left;
+        }
+
+        &__link {
+          display: inline-block;
+          padding: 15px 0;
+          padding-left: 15px;
+        }
+      }
+    }
+
+    .hamburger-btn {
+      display: inline-block;
+    }
+  }
+}

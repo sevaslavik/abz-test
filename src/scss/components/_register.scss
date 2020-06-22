@@ -1,0 +1,15 @@
+.register {
+  padding: 160px 0;
+
+  .users-title,
+  .users-description,
+  .sing-up-for-form{
+    text-align: center;
+  }
+
+  .sing-up-for-form {
+    .sing-up {
+      border: none;
+    }
+  }
+}

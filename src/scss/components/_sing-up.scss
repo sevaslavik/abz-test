@@ -1,0 +1,11 @@
+.sing-up {
+  padding: 10px 59px;
+  color: $color-white;
+  background-color: $primary-color;
+  border-radius: 5px;
+
+  &:hover {
+    color: $primary-color;
+    background-color: $color-white;
+  }
+}

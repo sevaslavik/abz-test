@@ -1,0 +1,30 @@
+.banner {
+  padding: 113px 30px;
+  background: url("../../assets/banner-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__title {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: $color-white;
+
+    @media (max-width:480px) {
+      text-align: center;
+    }
+  }
+
+  &__description {
+    margin-bottom: 40px;
+    color: $color-white;
+
+    @media (max-width:480px) {
+      text-align: center;
+    }
+  }
+
+  .sing-up {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  transition: 0.3s;
+}
+
+body {
+  font-family: $font-family-open-sans;
+  background-color: $background-color;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 54px;
+
+  @media (max-width:801px) {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  @media (max-width:480px) {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+//redefinition of bootstrap-styles layout ".container-fluid"
+//.col-md-6,
+//.col-md-12,
+//.container-fluid {
+//  padding: 0;
+//}
+
